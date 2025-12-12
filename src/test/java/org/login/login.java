@@ -13,24 +13,30 @@ public class login extends BaseClass{
 	}
 	
 	@CacheLookup
-	@FindBy(id="username")
-	private WebElement user;
+	@FindBy(name="q")
+	private WebElement search;
 	
 	@CacheLookup
-	@FindBy(id="password")
-	private WebElement pass;
+	@FindBy(xpath="//button[@type='submit']")
+	private WebElement button;
 	
 	@CacheLookup
 	@FindBy(id="login")
 	private WebElement loginbtn;
 
-	public WebElement getUser() {
-		return user;
+
+
+	public WebElement getSearch() {
+		return search;
 	}
 
-	public WebElement getPass() {
-		return pass;
+
+
+	public WebElement getButton() {
+		return button;
 	}
+
+
 
 	public WebElement getLoginbtn() {
 		return loginbtn;
