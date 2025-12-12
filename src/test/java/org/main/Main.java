@@ -28,7 +28,7 @@ public class Main extends BaseClass {
 		 int count = Math.min(24, Math.min(name.size(), price.size()));
 
 	        for (int i = 0; i < count; i++) {
-	            System.out.println((i+1) + ". " + name.get(i).getText() + 
+	            System.out.println((i) + ". " + name.get(i).getText() + 
 	                               " -- " + price.get(i).getText());
 	        }
 	        
